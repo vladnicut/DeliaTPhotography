@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/firstpage.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<script type="text/javascript">
+	$("[data-fancybox]").fancybox({
+		// Options will go here
+	});
+</script>
+
+<style>
+.container img{
+    width: 285px;
+    height: 210px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 4%;
+}
+.container {
+    margin-left: 173.89px;
+    padding: 0px;
+    margin-top:200px;
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#`">delia tanase photography</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">profile</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div><!--collapse-->
+    </div><!--cont-fluid-->
+</nav><!--navbar-->
+
+<div  class = "container">
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+    <img src="images/poza1.jpg" >
+</div>
+
+<script type="text/javascript">
+
+var didScroll;
+var lastScrollTop = 0;
+var navbarHeight = $('.navbar').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 50);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= 3)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .MagicMenu-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.navbar').fadeOut(250);
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.navbar').fadeIn(250);
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+</body>
+
+</html>
+
+

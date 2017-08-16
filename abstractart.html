@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+    <script src = "usefulstuff.js"></script>
+
+    <link rel="stylesheet" href="css/firstpage.css">
+
+    
+
+    <style>
+        .container .main{
+            background: red;
+            margin:100px auto;
+            position: relative;
+
+        }
+        body {
+            padding-top: 175px;
+        }
+
+        .container .col-sm-7  .img-responsive{
+            width: 75%;
+        }
+
+        .container .col-sm-5 #quotes{
+            margin-top: 25%;
+        }
+        .container .col-sm-2{
+            padding-top: 5%;
+            padding-right:0%;
+            width: 20%;
+        }
+
+    </style>
+
+</head>
+<body>
+       
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#`">delia tanase photography</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">profile</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div><!--collapse-->
+        </div><!--cont-fluid-->
+    </nav><!--navbar-->
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class ="carousel-inner" role="listbox">
+
+            <div class = "item-active">
+                <div class ="row" alt = "Slide 1">
+                    <div class = "col-sm-7">  <img class ="img-responsive" src="images/poza1.jpg" > </div>
+                    <div class ="col-sm-5"> <p id="quotes">This is a smart quote, but I am not that smart</p> </div>
+                </div>
+            </div>
+
+            <div class = "item">
+                <div class ="row" alt = "Slide 2">
+                    <div class = "col-sm-7">  <img class ="img-responsive" src="images/poza2.jpg" > </div>
+                    <div class ="col-sm-5"> <p id="quotes">This is a smart quote, but I am not that smart</p> </div>
+                </div>
+            </div>
+
+            <div class ="item">
+                <div class ="row" alt = "Slide 3">
+                    <div class = "col-sm-7">  <img class ="img-responsive" src="images/poza3.jpg" > </div>
+                    <div class ="col-sm-5"> <p id="quotes">This is a smart quote, but I am not that smart</p> </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+</body>
+</html>
+
+
