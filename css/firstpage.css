@@ -8,6 +8,8 @@
 .navbar {
     background-color: white;
     height: 115px;
+    position:fixed;
+    margin-bottom: 0;
 
 }
 
@@ -20,17 +22,16 @@ ul.navbar-right li:first{
     color: darksalmon;
 }
 
-.navbar-collapse {
-    color: darksalmon;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .carousel-inner{
     height:100%;
+    width:100%;
+}
+body{
+    margin-top:115px;
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
-    height: 100%;
-}
+    height:100%;
 
+}

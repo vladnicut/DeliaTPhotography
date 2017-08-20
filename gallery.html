@@ -10,8 +10,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="jquery.fancybox.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -40,12 +40,17 @@
 
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+    #secondary { width:30%; margin-left:3%;}
 }
 
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
+}
+
+.text {
+    color:rgba(0,0,0, 0.3);
+
 }
 
 </style>
@@ -70,7 +75,13 @@
 </nav><!--navbar-->
 
 <div  class = "container">
-    <img src="images/poza1.jpg" >
+    <div class="imagint">
+        <img src="images/poza1.jpg">
+        <div class="overlay">
+            <div class="text">India</div>
+        </div>
+    </div>
+
     <img src="images/poza1.jpg" >
     <img src="images/poza1.jpg" >
     <img src="images/poza1.jpg" >
@@ -101,11 +112,11 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= 3)
         return;
-    
+
     // If they scrolled down and are past the navbar, add class .MagicMenu-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
@@ -117,12 +128,10 @@ function hasScrolled() {
             $('.navbar').fadeIn(250);
         }
     }
-    
+
     lastScrollTop = st;
 }
 </script>
 </body>
 
 </html>
-
-
