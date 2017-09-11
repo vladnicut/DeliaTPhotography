@@ -48,11 +48,51 @@
     #secondary { width:100%; margin:0; border:none; }
 }
 
-.text {
-    color:rgba(0,0,0, 0.3);
+.imagint {
+  position: relative;
+  width: 30vw;
+  float: left;
+  margin: 1vw;
 
 }
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.text {
+    color:rgba(5,100, 30 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    moz-transform: translate(-50%, -50%);
+}
+
+.imagint:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: white;
+}
+.galerie{
+  margin-left:2vw;
+  padding: 0px;
+  margin-top:20vw;
+}
 </style>
 
 </head>
@@ -74,24 +114,47 @@
     </div><!--cont-fluid-->
 </nav><!--navbar-->
 
-<div  class = "container">
-    <div class="imagint">
-        <img src="images/poza1.jpg">
-        <div class="overlay">
-            <div class="text">India</div>
-        </div>
+<div class="galerie">
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg">
+    <div class="overlay">
+        <div class="text">India</div>
     </div>
-
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
-    <img src="images/poza1.jpg" >
 </div>
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg" >
+    <div class="overlay">
+        <div class="text">Spain</div>
+    </div>
+</div>
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg" >
+    <div class="overlay">
+        <div class="text">Moroco</div>
+    </div>
+</div>
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg" >
+    <div class="overlay">
+        <div class="text">Spain</div>
+    </div>
+</div>
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg" >
+    <div class="overlay">
+        <div class="text">Spain</div>
+    </div>
+</div>
+<a href="gallery2.html">
+<div class="imagint">
+    <img class="image" src="images/poza1.jpg" >
+    <div class="overlay">
+        <div class="text">Spain</div>
+    </div>
+</div>
+</a>
+</div>
+
 
 <script type="text/javascript">
 
